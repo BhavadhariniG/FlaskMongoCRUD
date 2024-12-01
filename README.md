@@ -95,7 +95,9 @@ python app.py
 Access the application in your browser at http://127.0.0.1:5000/home.
 # Technologies Used
 Backend: Flask
+
 Database: MongoDB
+
 Frontend: HTML, CSS, Jinja2 Templating
 
 # Future Enhancements
