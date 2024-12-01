@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div style="text-align: center; margin-top: 50px;">
+        <h2>Thank you for your response</h2>
+        <p>successfully submitted.</p>
+        <div style="margin-top: 20px;">
+            <a href="{{ url_for('home') }}" style="text-decoration: none; color: white; background-color: #4CAF50; padding: 10px 20px; border-radius: 5px; margin-right: 10px;">Back to Homepage</a>
+            <a href="{{ url_for('add') }}" style="text-decoration: none; color: white; background-color: #2196F3; padding: 10px 20px; border-radius: 5px; margin-right: 10px;">Continue Adding Information</a>
+            <a href="{{ url_for('show') }}" style="text-decoration: none; color: white; background-color: #4CAF50; padding: 10px 20px; border-radius: 5px; margin-right: 10px;">Show details</a>
+
+        </div>
+    </div>
+{% endblock %}

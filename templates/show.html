@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Show{% endblock %}
+
+{% block content %}
+    <div style="margin: 20px;">
+        <h2>Submitted Information</h2>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="background-color: #f2f2f2;">
+                <th style="border: 1px solid #ddd; padding: 8px;">Name</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Mail ID</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Mobile</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Place</th>
+            </tr>
+            {% for student in students %}
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">{{ student['Name'] }}</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">{{ student['Mail id'] }}</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">{{ student['Mobile'] }}</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">{{ student['Place'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

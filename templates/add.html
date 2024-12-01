@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}add{% endblock %}
+{% block heading %} 
+<center>
+    <h1 style="color:rgb(161, 83, 83);font-size:40px;">
+        Enter Your Details
+    </h1>
+</center>
+
+<body style="background-color:rgb(104, 133, 173);">
+    <style>
+        footer {
+            text-align: center;
+            background-color: rgb(43, 27, 27);
+            color: rgb(114, 76, 76);
+            margin-top: 20px;
+            padding: 5px;
+            }
+    
+    </style>
+    
+
+<div>
+<center>
+    <form method="POST" action="{{ url_for('add') }}">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required><br><br>
+    
+        <label for="mail_id">Mail ID:</label>
+        <input type="email" id="mail_id" name="Mail id" required><br><br>
+    
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" required><br><br>
+    
+        <label for="place">Place:</label>
+        <input type="text" id="place" name="place" required><br><br>
+    
+        <input type="submit" value="Submit">
+    </form>
+    
+</center>
+</div>
+</body>
+{% endblock %}
